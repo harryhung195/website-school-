@@ -6,9 +6,8 @@
   "type": "module",
   "scripts": {
     "start": "nodemon server.js",
-    "build": "npm i",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "build": "npm i"
+   
   },
   "keywords": [],
   "author": "",
