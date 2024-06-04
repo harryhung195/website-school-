@@ -10,7 +10,16 @@ const stripe = Stripe(process.env.STRIPE_KEY);
 
 // Initialize the Express application
 const app = express();
+app.user(cors(
+    {
+        origin:["https://deploy-mern-1whq.vercel.app"],
+        methods: ["POST", "GET"],
+        credentials:true
+    }
+    ));
 
+
+    
 // Middleware to serve static files from the "public" directory
 app.use(express.static("public"));
 
